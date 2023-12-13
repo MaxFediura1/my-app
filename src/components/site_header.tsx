@@ -10,13 +10,9 @@ import logo from '@/../public/images/header_logo.svg'
 const projects = [
     { name: 'Lemon Garden Residence & SPA',href:'/lemon_garden_residence'},
     { name: 'Batumi Garden Inn',href: '/batumi_garden_inn'},
-    { name: 'Grand Botanico Residence',href: '#'},
-    { name: 'Royal Residence Botanico',href: '#'},
+    { name: 'Grand Botanico Residence',href: '/grand_botanico_residence'},
+    { name: 'Royal Residence Botanico',href: '/royal_residence_botanico'},
     { name: 'Luxury Villas',href: '/luxury_villas'}
-  ]
-  const callsToAction = [
-    { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-    { name: 'Contact sales', href: '#', icon: PhoneIcon },
   ]
   
   function classNames(...classes:any) {
@@ -95,21 +91,16 @@ export function SiteHeader() {
           <a href="useful_information" className="text-sm font-semibold leading-6 text-gray-900">
           Useful information
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="contacts" className="text-sm font-semibold leading-6 text-gray-900">
           Contacts
           </a>
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img 
                 className="h-8 w-auto"
@@ -155,36 +146,28 @@ export function SiteHeader() {
                   )}
                 </Disclosure>
                 <a
-                  href="#"
+                  href="about_us"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About us
                 </a>
                 <a
-                  href="#"
+                  href="gallery"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Gallery
                 </a>
                 <a
-                  href="#"
+                  href="useful_information"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Useful information
                 </a>
                 <a
-                  href="#"
+                  href="contacts"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contacts
-                </a>
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  log in
                 </a>
               </div>
             </div>

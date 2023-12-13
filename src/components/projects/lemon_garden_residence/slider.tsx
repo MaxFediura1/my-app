@@ -29,7 +29,7 @@ export default function Slider() {
         delay: 2000,
         disableOnInteraction:true
       }}  
-      className='w-full h-auto'
+      className='w-full h-[330px]'
     >
       <SwiperSlide>
         <Image 
@@ -40,13 +40,13 @@ export default function Slider() {
       className='object-cover'
       />
       </SwiperSlide>
-      <SwiperSlide className='bg-blue-300'>
+      <SwiperSlide>
       <Image
       src={slider_image_2}
       alt='slider'
       width={500}
       height={330}
-      className='object-cover w-full'
+      className='object-cover '
       />
       </SwiperSlide>
       <SwiperSlide>

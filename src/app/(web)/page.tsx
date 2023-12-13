@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="">
             <Build_future/>
-            {/* <Our_projects/> */}
+            <Our_projects/>
             <Advantages/>
             <Slider/>
             <Have_question/>

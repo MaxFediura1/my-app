@@ -2,11 +2,19 @@
 import { Disclosure } from "@headlessui/react";
 
 export default function Articles() {
+    const videos = [
+        {title:'Apartment renovation in Batumi',text:'Construction stores, furniture and home accessories stores, prices, assortment, advice from the developer.',url:'https://www.youtube.com/watch?v=CQuioblJkVA'},
+        {title:'The best beaches of Batumi',text:'Overview of beaches in Batumi and beyond, infrastructure, our advice.',url:'https://www.youtube.com/watch?v=A5D8NuKEPJc'},
+        {title:'To Batumi by car',text:'Insurance for foreign numbers, how to rearrange numbers, fines, parking.',url:'https://www.youtube.com/watch?v=Qr7jfxsPj64'},
+        {title:'Real estate in Batumi outside the city',text:'Profitability of suburban real estate, why they buy an apartment or a house outside the city, advantages.',url:'https://www.youtube.com/watch?v=lRdcHAz644Q'},
+    ]
+
   return (
     <div className="w-[80%] mx-auto">
-        <ol className="relative border-s border-gray-200 dark:border-gray-700 w-[90%] mx-auto mb-10">                  
-            <li className="mb-10 ms-4">
-                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <h2 className="text-[22px] mb-2">What's new?</h2>
+        <ol className="relative border-s border-gray-200 dark:border-gray-700 w-[90%] mx-auto ">                  
+            <li className="mb-5 ms-4">
+                <div className="absolute w-3 h-3  bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">24.04.2023</time>
                 <h3 className="text-lg font-semibold">10 reasons to invest in Georgia: in real estate</h3>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Foreign investments in Georgia in 2022 increased by almost 80%. Investors from Europe, USA, Turkey, Great Britain, and China are investing in the energy, financial, transport, and of course, real estate in Georgia. </p>
@@ -32,7 +40,7 @@ compared to other European countries due to the ratio of the cost of rent (high)
                     </Disclosure.Panel>
                 </Disclosure>
             </li>
-            <li className="mb-10 ms-4">
+            <li className="mb-5 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">20.05.2022</time>
                 <h3 className="text-lg font-semibold">Income from real estate Batumi Investment</h3>
@@ -54,6 +62,19 @@ compared to other European countries due to the ratio of the cost of rent (high)
                 </Disclosure>
             </li>
         </ol>
+        <h2 className="text-[22px] mb-2">What see?</h2>
+        <ol className="relative border-s border-gray-200 dark:border-gray-700 w-[90%] mx-auto mb-10">
+            {videos.map((video) =>(
+            <li className="mb-10 ms-4">
+            <div className="absolute w-3 h-3  bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="text-lg font-semibold">{video.title}</h3>
+            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{video.text} </p>
+            <button  className="mb-5 inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">See more</button>
+        </li>
+            ))}                 
+
+        </ol>
+
     </div>
   )
 }

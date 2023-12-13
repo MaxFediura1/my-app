@@ -48,31 +48,5 @@ export default function Advantages() {
           className='h-auto w-full'
           />
     </div>
-    // <div>
-    //   <div className='text-center'>
-    //     <p className='text-lg font-medium'>Advantages</p>
-    //     <h1 className='text-5xl font-bold'>With our knowledge we guarantee success</h1>
-    //   </div>
-    //   <div className='grid '>
-    //   {advantages.map((item) =>
-    //   <div className='relative flex items-center gap-7 bg-red-400 w-[400px]'>
-    //           <Image
-    //   src={advantages_img}
-    //   alt='advantages image'
-    //   width={150}
-    //   height={150}
-    //   className='float-left mr-5'
-    //   />
-    //     <p className='text-lg font-medium mt-5 w-44'>{item.text}</p>
-    //     <h1 className='absolute z-1 top-[25%] ml-14 text-8xl text-[#144e5e] font-bold'>{item.number}</h1>
-    //   </div>
-    //   )}
-    //   </div>
-    //   <Image
-    //    src={main_img}
-    //    alt='main image'
-    //    className='h-auto w-full'
-    //    />
-    // </div>
   )
 }

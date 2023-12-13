@@ -23,7 +23,7 @@ export default function page() {
     <div>
       <Header/>
         {/* <Header/> */}
-        <div className="w-[80%] m-auto text-center mb-5 text-lg">
+        <div className= " mb-5 text-lg">
         <Title title={title}/>
         <Description text1={description.text1} text2={description.text2}/>
 

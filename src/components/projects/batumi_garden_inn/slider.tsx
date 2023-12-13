@@ -28,7 +28,7 @@ export default function Slider() {
         delay: 2000,
         disableOnInteraction:true
       }}  
-      className='w-full h-auto'
+      className='w-full h-[330px]'
     >
       <SwiperSlide>
         <Image 

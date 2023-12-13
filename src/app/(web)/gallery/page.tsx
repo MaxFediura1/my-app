@@ -17,11 +17,9 @@ export default function page()
     return (
         <div >
             <Header />
-          <div className="mx-auto max-w-2xl px-4    lg:max-w-7xl  text-center">
             <Title title={title}/>
             <Description text1={description.text1} text2={description.text2}/>
-            {/* <h2 className="text-2xl font-bold tracking-tight text-gray-900">Gallery</h2> */}
-    
+          <div className="mx-auto max-w-2xl px-4    lg:max-w-7xl  text-center">
             <div className="mt-6 mb-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-2">
               {IMAGES.map((image) => (
                 <div  className="group relative">
