@@ -83,10 +83,10 @@ export default function Select_your_dream_villa(this: any) {
       {images.map((item,i)=>  
         { 
           return(
-            <div className='flex flex-row items-center justify-center'>
+            <div key={i}  className='flex flex-row items-center justify-center'>
             <button><IoIosArrowBack onClick={prevPage} /></button>
             <Image
-            key={i}
+            
             src={item.href}
             alt='image'
             className='w-[300px] h-auto'

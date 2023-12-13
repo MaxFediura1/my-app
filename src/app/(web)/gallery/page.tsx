@@ -22,7 +22,7 @@ export default function page()
           <div className="mx-auto max-w-2xl px-4    lg:max-w-7xl  text-center">
             <div className="mt-6 mb-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-2">
               {IMAGES.map((image) => (
-                <div  className="group relative">
+                <div key={1}  className="group relative">
                   <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:w-96  lg:h-80">
                     <Image
                       src= {image.imgSrc}

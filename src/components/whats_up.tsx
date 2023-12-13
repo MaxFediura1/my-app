@@ -8,5 +8,5 @@ export default function Whats_up() {
     <div>
         <Link href={'https://api.whatsapp.com/send/?phone=995555221188&text&type=phone_number&app_absent=0'}><Image src={whats_up_img} alt='what`s up image' className='w-14 fixed bottom-5 left-5'/></Link>
     </div>
-  )
+  ) 
 }

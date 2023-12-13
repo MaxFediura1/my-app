@@ -1,12 +1,12 @@
 'use client'
 import React , {useEffect} from 'react'
 import {Loader} from '@googlemaps/js-api-loader'
+
 import Image from 'next/image'
 
 import point_img from '@/../public/images/contacts/point.svg'
 import phone_img from '@/../public/images/contacts/phone.svg'
 import mail_img from '@/../public/images/contacts/mail.svg'
-
 
 import whats_up from '@/../public/images/contacts/whats_up.svg'
 import instagram from '@/../public/images/contacts/instagram.svg'
@@ -24,7 +24,7 @@ export default function Map() {
                 version:'weekly'
             })   
             const { Map } = await loader.importLibrary('maps')
-            const { Marker } = await loader.importLibrary('marker') as google.maps.MarkerLibrary
+            const { Marker } = await loader.importLibrary('marker') 
             const position = {
                 lat: 41.639460642141984,
                 lng: 41.61721239248418
@@ -32,7 +32,7 @@ export default function Map() {
             const mapOptions: google.maps.MapOptions = {
                 center:position,
                 zoom:15,
-                mapId:'MY_NEXTJS_MAPID'
+                // mapId:'MY_NEXTJS_MAPID'
             }
             const map = new Map(mapRef.current as HTMLDivElement,mapOptions)
 

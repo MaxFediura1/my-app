@@ -13,7 +13,7 @@ export default function Faq() {
     <div className="w-[70%] mx-auto ">
         {faq.map((f) =>
         (
-            <Disclosure>
+            <Disclosure key={1}>
             {({ open }) => (
               <>
       

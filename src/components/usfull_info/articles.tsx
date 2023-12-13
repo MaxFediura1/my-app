@@ -65,7 +65,7 @@ compared to other European countries due to the ratio of the cost of rent (high)
         <h2 className="text-[22px] mb-2">What see?</h2>
         <ol className="relative border-s border-gray-200 dark:border-gray-700 w-[90%] mx-auto mb-10">
             {videos.map((video) =>(
-            <li className="mb-10 ms-4">
+            <li key={1} className="mb-10 ms-4">
             <div className="absolute w-3 h-3  bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
             <h3 className="text-lg font-semibold">{video.title}</h3>
             <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{video.text} </p>

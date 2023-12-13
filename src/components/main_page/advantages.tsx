@@ -27,7 +27,7 @@ export default function Advantages() {
         </div>
         <div className="flex flex-col items-center  m-auto  my-10 gap-y-10 lg:flex-col lg:w-[400px] xl:flex-row xl:w-[1200px] ">
         {advantages.map((item) => (
-          <div className='flex items-center '>
+          <div key={1} className='flex items-center '>
             <Image
             src={advantages_img}
             alt = 'advatages image'
